@@ -1,0 +1,13 @@
+# Xcode
+*.xcuserstate
+xcuserdata/
+
+# SPM build artifacts
+.build/
+*.resolved
+
+# Firebase
+Application/Resources/GoogleService-Info.plist
+
+# macOS
+.DS_Store

@@ -1,0 +1,31 @@
+{
+  "configurations" : [
+    {
+      "id" : "700A1FA3-1AA7-43A3-9D48-8B94AA82638D",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:DomainLayer/SharedDomain",
+        "identifier" : "SharedDomainTests",
+        "name" : "SharedDomainTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:DataLayer/Repositories/ActivityRepository",
+        "identifier" : "ActivityRepositoryTests",
+        "name" : "ActivityRepositoryTests"
+      }
+    }
+  ],
+  "version" : 1
+}

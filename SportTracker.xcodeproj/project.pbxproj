@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		057B12172F8E1913006C14FF /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 057B12162F8E1913006C14FF /* Localizable.xcstrings */; };
+		057B121A2F8E5A1C006C14FF /* FirebaseProvider in Frameworks */ = {isa = PBXBuildFile; productRef = 057B12192F8E5A1C006C14FF /* FirebaseProvider */; };
+		05CFC48A2F8CFF3900F7A3A2 /* ActivityList in Frameworks */ = {isa = PBXBuildFile; productRef = AA0000012F890975000B067E /* ActivityList */; };
+		05CFC48B2F8CFF3900F7A3A2 /* AddActivity in Frameworks */ = {isa = PBXBuildFile; productRef = AA0000022F890975000B067E /* AddActivity */; };
+		05CFC48C2F8CFF3900F7A3A2 /* Profile in Frameworks */ = {isa = PBXBuildFile; productRef = AA0000032F890975000B067E /* Profile */; };
+		05CFC48D2F8CFF3900F7A3A2 /* DependencyInjection in Frameworks */ = {isa = PBXBuildFile; productRef = AA0000042F890975000B067E /* DependencyInjection */; };
+		05E7F0DE2F8D0BB300CAC7CF /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E7F0DD2F8D0BB300CAC7CF /* AppCoordinator.swift */; };
+		05E7FAA72F8D43DA00CAC7CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05E7FAA62F8D43DA00CAC7CF /* GoogleService-Info.plist */; };
+		CC0020052F000000000B067E /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0020032F000000000B067E /* RootView.swift */; };
+		CC0020062F000000000B067E /* SportTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0020042F000000000B067E /* SportTrackerApp.swift */; };
+		CC0040022F000000000B067E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC0040012F000000000B067E /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		057B12162F8E1913006C14FF /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		05D13A172F92FE8500787371 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		05E7F0DD2F8D0BB300CAC7CF /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		05E7FAA62F8D43DA00CAC7CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		05E7FAA82F8D44CC00CAC7CF /* SportTracker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SportTracker-Info.plist"; sourceTree = "<group>"; };
+		05EAF0B72F890975000B067E /* SportTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC0020032F000000000B067E /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		CC0020042F000000000B067E /* SportTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportTrackerApp.swift; sourceTree = "<group>"; };
+		CC0020072F000000000B067E /* DependencyInjection */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DependencyInjection; sourceTree = "<group>"; };
+		CC0030012F000000000B067E /* SharedDomain */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SharedDomain; sourceTree = "<group>"; };
+		CC0030032F000000000B067E /* SwiftDataToolkit */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SwiftDataToolkit; sourceTree = "<group>"; };
+		CC0030042F000000000B067E /* FirebaseToolkit */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FirebaseToolkit; sourceTree = "<group>"; };
+		CC0030062F000000000B067E /* SwiftDataProvider */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SwiftDataProvider; sourceTree = "<group>"; };
+		CC0030072F000000000B067E /* FirebaseProvider */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FirebaseProvider; sourceTree = "<group>"; };
+		CC00300C2F000000000B067E /* ActivityRepository */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ActivityRepository; sourceTree = "<group>"; };
+		CC0030082F000000000B067E /* UIToolkit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = UIToolkit; sourceTree = "<group>"; };
+		CC0030092F000000000B067E /* ActivityList */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ActivityList; sourceTree = "<group>"; };
+		CC00300A2F000000000B067E /* AddActivity */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = AddActivity; sourceTree = "<group>"; };
+		CC00300B2F000000000B067E /* Profile */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Profile; sourceTree = "<group>"; };
+		CC0040012F000000000B067E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		05EAF0B42F890975000B067E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05CFC48D2F8CFF3900F7A3A2 /* DependencyInjection in Frameworks */,
+				05CFC48C2F8CFF3900F7A3A2 /* Profile in Frameworks */,
+				057B121A2F8E5A1C006C14FF /* FirebaseProvider in Frameworks */,
+				05CFC48B2F8CFF3900F7A3A2 /* AddActivity in Frameworks */,
+				05CFC48A2F8CFF3900F7A3A2 /* ActivityList in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05EAF0AE2F890975000B067E = {
+			isa = PBXGroup;
+			children = (
+				05D13A172F92FE8500787371 /* README.md */,
+				CC0020012F000000000B067E /* Application */,
+				CC0001022F890975000B067E /* PresentationLayer */,
+				CC0001032F890975000B067E /* DomainLayer */,
+				CC0001042F890975000B067E /* DataLayer */,
+				05EAF0B82F890975000B067E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		05EAF0B82F890975000B067E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05EAF0B72F890975000B067E /* SportTracker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC0001022F890975000B067E /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				CC0030092F000000000B067E /* ActivityList */,
+				CC00300A2F000000000B067E /* AddActivity */,
+				CC00300B2F000000000B067E /* Profile */,
+				CC0030082F000000000B067E /* UIToolkit */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		CC0001032F890975000B067E /* DomainLayer */ = {
+			isa = PBXGroup;
+			children = (
+				CC0030012F000000000B067E /* SharedDomain */,
+			);
+			path = DomainLayer;
+			sourceTree = "<group>";
+		};
+		CC0001042F890975000B067E /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				CC0030022F000000000B067E /* Toolkits */,
+				CC00300D2F000000000B067E /* Repositories */,
+				CC0030052F000000000B067E /* Providers */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		CC00300D2F000000000B067E /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				CC00300C2F000000000B067E /* ActivityRepository */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		CC0020012F000000000B067E /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				CC0020072F000000000B067E /* DependencyInjection */,
+				CC0020022F000000000B067E /* Resources */,
+				05E7F0DD2F8D0BB300CAC7CF /* AppCoordinator.swift */,
+				CC0020042F000000000B067E /* SportTrackerApp.swift */,
+				CC0020032F000000000B067E /* RootView.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		CC0020022F000000000B067E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CC0040012F000000000B067E /* Assets.xcassets */,
+				05E7FAA82F8D44CC00CAC7CF /* SportTracker-Info.plist */,
+				057B12162F8E1913006C14FF /* Localizable.xcstrings */,
+				05E7FAA62F8D43DA00CAC7CF /* GoogleService-Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CC0030022F000000000B067E /* Toolkits */ = {
+			isa = PBXGroup;
+			children = (
+				CC0030032F000000000B067E /* SwiftDataToolkit */,
+				CC0030042F000000000B067E /* FirebaseToolkit */,
+			);
+			path = Toolkits;
+			sourceTree = "<group>";
+		};
+		CC0030052F000000000B067E /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				CC0030062F000000000B067E /* SwiftDataProvider */,
+				CC0030072F000000000B067E /* FirebaseProvider */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		05EAF0B62F890975000B067E /* SportTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05EAF0C72F890976000B067E /* Build configuration list for PBXNativeTarget "SportTracker" */;
+			buildPhases = (
+				05EAF0B32F890975000B067E /* Sources */,
+				05EAF0B42F890975000B067E /* Frameworks */,
+				05EAF0B52F890975000B067E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SportTracker;
+			packageProductDependencies = (
+				AA0000012F890975000B067E /* ActivityList */,
+				AA0000022F890975000B067E /* AddActivity */,
+				AA0000032F890975000B067E /* Profile */,
+				AA0000042F890975000B067E /* DependencyInjection */,
+				057B12192F8E5A1C006C14FF /* FirebaseProvider */,
+			);
+			productName = SportTracker;
+			productReference = 05EAF0B72F890975000B067E /* SportTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		05EAF0AF2F890975000B067E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2640;
+				LastUpgradeCheck = 2640;
+				TargetAttributes = {
+					05EAF0B62F890975000B067E = {
+						CreatedOnToolsVersion = 26.4;
+					};
+				};
+			};
+			buildConfigurationList = 05EAF0B22F890975000B067E /* Build configuration list for PBXProject "SportTracker" */;
+			developmentRegion = cs;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				cs,
+			);
+			mainGroup = 05EAF0AE2F890975000B067E;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				057B12182F8E5A1C006C14FF /* XCLocalSwiftPackageReference "DataLayer/Providers/FirebaseProvider" */,
+				AA0000152F890975000B067E /* XCLocalSwiftPackageReference "DomainLayer/SharedDomain" */,
+				AA0000162F890975000B067E /* XCLocalSwiftPackageReference "DataLayer/Repositories/ActivityRepository" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 05EAF0B82F890975000B067E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				05EAF0B62F890975000B067E /* SportTracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		05EAF0B52F890975000B067E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC0040022F000000000B067E /* Assets.xcassets in Resources */,
+				05E7FAA72F8D43DA00CAC7CF /* GoogleService-Info.plist in Resources */,
+				057B12172F8E1913006C14FF /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		05EAF0B32F890975000B067E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05E7F0DE2F8D0BB300CAC7CF /* AppCoordinator.swift in Sources */,
+				CC0020052F000000000B067E /* RootView.swift in Sources */,
+				CC0020062F000000000B067E /* SportTrackerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		05EAF0C52F890976000B067E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = Z5YYRR5JK5;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		05EAF0C62F890976000B067E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPROVEMENTS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = Z5YYRR5JK5;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		05EAF0C82F890976000B067E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z5YYRR5JK5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Application/Resources/SportTracker-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Sport Tracker";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carrione.SportTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		05EAF0C92F890976000B067E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z5YYRR5JK5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Application/Resources/SportTracker-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Sport Tracker";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carrione.SportTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05EAF0B22F890975000B067E /* Build configuration list for PBXProject "SportTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05EAF0C52F890976000B067E /* Debug */,
+				05EAF0C62F890976000B067E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05EAF0C72F890976000B067E /* Build configuration list for PBXNativeTarget "SportTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05EAF0C82F890976000B067E /* Debug */,
+				05EAF0C92F890976000B067E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		057B12182F8E5A1C006C14FF /* XCLocalSwiftPackageReference "DataLayer/Providers/FirebaseProvider" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = DataLayer/Providers/FirebaseProvider;
+		};
+		AA0000112F890975000B067E /* XCLocalSwiftPackageReference "PresentationLayer/ActivityList" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = PresentationLayer/ActivityList;
+		};
+		AA0000122F890975000B067E /* XCLocalSwiftPackageReference "PresentationLayer/AddActivity" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = PresentationLayer/AddActivity;
+		};
+		AA0000132F890975000B067E /* XCLocalSwiftPackageReference "PresentationLayer/Profile" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = PresentationLayer/Profile;
+		};
+		AA0000142F890975000B067E /* XCLocalSwiftPackageReference "Application/DependencyInjection" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Application/DependencyInjection;
+		};
+		AA0000152F890975000B067E /* XCLocalSwiftPackageReference "DomainLayer/SharedDomain" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = DomainLayer/SharedDomain;
+		};
+		AA0000162F890975000B067E /* XCLocalSwiftPackageReference "DataLayer/Repositories/ActivityRepository" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = DataLayer/Repositories/ActivityRepository;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		057B12192F8E5A1C006C14FF /* FirebaseProvider */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FirebaseProvider;
+		};
+		AA0000012F890975000B067E /* ActivityList */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA0000112F890975000B067E /* XCLocalSwiftPackageReference "PresentationLayer/ActivityList" */;
+			productName = ActivityList;
+		};
+		AA0000022F890975000B067E /* AddActivity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA0000122F890975000B067E /* XCLocalSwiftPackageReference "PresentationLayer/AddActivity" */;
+			productName = AddActivity;
+		};
+		AA0000032F890975000B067E /* Profile */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA0000132F890975000B067E /* XCLocalSwiftPackageReference "PresentationLayer/Profile" */;
+			productName = Profile;
+		};
+		AA0000042F890975000B067E /* DependencyInjection */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA0000142F890975000B067E /* XCLocalSwiftPackageReference "Application/DependencyInjection" */;
+			productName = DependencyInjection;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 05EAF0AF2F890975000B067E /* Project object */;
+}
